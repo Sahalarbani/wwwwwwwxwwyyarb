@@ -3299,7 +3299,7 @@ local function modifyRodData(rodNameInput)
         lastModifiedRod = rodNameInput
 
         if rodData.RollData and rodData.RollData.BaseLuck then
-            rodData.RollData.BaseLuck *= 50
+            rodData.RollData.BaseLuck *= 5000
         end
         if rodData.ClickPower then
             rodData.ClickPower *= 5
@@ -3353,7 +3353,7 @@ local function modifyBaitData(baitName)
     lastModifiedBait = baitName
 
     if baitData.Modifiers and baitData.Modifiers.BaseLuck then
-        baitData.Modifiers.BaseLuck *= 8
+        baitData.Modifiers.BaseLuck *= 50
     end
 
     NotifySuccess("Bait Modified", "Bait '" .. baitName .. "' successfully boosted.", 3)
