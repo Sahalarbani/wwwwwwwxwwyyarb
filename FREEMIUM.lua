@@ -3299,13 +3299,13 @@ local function modifyRodData(rodNameInput)
         lastModifiedRod = rodNameInput
 
         if rodData.RollData and rodData.RollData.BaseLuck then
-            rodData.RollData.BaseLuck *= 20
+            rodData.RollData.BaseLuck *= 50
         end
         if rodData.ClickPower then
-            rodData.ClickPower *= 3
+            rodData.ClickPower *= 5
         end
         if rodData.Resilience then
-            rodData.Resilience *= 3
+            rodData.Resilience *= 5
         end
         if typeof(rodData.Windup) == "NumberRange" then
             local newMin = rodData.Windup.Min * 0.7
@@ -3313,7 +3313,7 @@ local function modifyRodData(rodNameInput)
             rodData.Windup = NumberRange.new(newMin, newMax)
         end
         if rodData.MaxWeight then
-            rodData.MaxWeight *= 5
+            rodData.MaxWeight *= 10
         end
         rodData.GuaranteedSECRET = true
 
